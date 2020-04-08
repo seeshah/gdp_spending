@@ -57,8 +57,8 @@ filepath_emission = pd.read_csv(DATA_PATH.joinpath('co-emissions-per-capita.csv'
 # In[4]:
 
 
-def data(x,y):
-    d = pd.read_csv(x)
+def data(d,y):
+#     d = pd.read_csv(x)
     if y == 'Per capita CO₂ emissions (tonnes per capita)':
         d['randNumCol'] = np.random.randint(100, 1000, d.shape[0])/1000
         y = 'randNumCol'
