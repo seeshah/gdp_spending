@@ -23,7 +23,7 @@ import numpy as np
 
 
 # external_stylesheets = ['https://github.com/cshah95/gdp_spending/blob/master/s1.css']
-app = dash.Dash()
+app = dash.Dash(__name__)
 
 
 # In[ ]:
